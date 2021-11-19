@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package session2.sec2;
+package session02.sec2;
 
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package session3;
+package session03;
 
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package session2.sec1;
+package session02.sec1;
 
 import javafx.application.Application;
 import javafx.geometry.Orientation;

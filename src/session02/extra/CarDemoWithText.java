@@ -3,34 +3,35 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package session2.sec2;
+package session02.extra;
 
 import javafx.application.Application;
 import javafx.geometry.Orientation;
 import javafx.scene.Scene;
 import javafx.scene.layout.FlowPane;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 /**
  *
  * @author bader-aul
  */
-public class CarDemo extends Application {
+public class CarDemoWithText extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+        FlowPane root = new FlowPane();
+        root.setOrientation(Orientation.VERTICAL);
 
-        FlowPane root = new FlowPane(Orientation.VERTICAL);
+        CarPaneWithText car1 = new CarPaneWithText("Bader");
+        root.getChildren().add(car1);
 
-        CarPane car = new CarPane(Color.RED);
-        CarPane car1 = new CarPane(Color.BLUE);
-        CarPane car2 = new CarPane(Color.GREEN);
+        CarPaneWithText car2 = new CarPaneWithText("Elie");
+        root.getChildren().add(car2);
 
-        //or I can add as much cars as I want using a for loop
-        root.getChildren().addAll(car, car1, car2);
+        CarPaneWithText car3 = new CarPaneWithText("Jean Marc");
+        root.getChildren().add(car3);
 
-        Scene scene = new Scene(root, 500, 250);
+        Scene scene = new Scene(root, 500, 500);
 
         primaryStage.setTitle("Car Demo");
         primaryStage.setScene(scene);
