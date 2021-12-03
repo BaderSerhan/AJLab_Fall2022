@@ -1,4 +1,4 @@
-package assignment1;
+package assignment01;
 
 import javafx.application.Application;
 import javafx.geometry.Pos;
