@@ -1,4 +1,4 @@
-package assignment02;
+package session05_assignment02;
 
 //import java.util.Scanner;
 import javafx.application.Application;
