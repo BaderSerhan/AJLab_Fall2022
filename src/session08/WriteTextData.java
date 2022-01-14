@@ -7,13 +7,14 @@ package session08;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.PrintWriter;
 
 /**
  *
  * @author bader-aul
  */
-public class WriteData {
+public class WriteTextData {
 
     /**
      * @param args the command line arguments
@@ -26,17 +27,13 @@ public class WriteData {
             System.exit(1);
         }
 
-        PrintWriter output = new PrintWriter(file);
-        output.print("Ahmad H Said\t");
-        output.print(89);
-        output.println();
-
-        output.print("Johnny R Noun\t");
-        output.print(79);
-        output.print("\n");
-
-        output.print("Eddy T Khoury\t");
-        output.println(99);
+        PrintWriter output = new PrintWriter(new FileOutputStream(file, true));
+        output.print("Andree\t");
+        output.println(19);
+        output.print("Kassandra\t");
+        output.println(29);
+        output.print("JeanMarc\t");
+        output.println(89);
 
         System.out.println("Success");
 

@@ -13,7 +13,7 @@ import java.util.Scanner;
  *
  * @author bader-aul
  */
-public class ReadData {
+public class ReadTextData {
 
     /**
      * @param args the command line arguments
